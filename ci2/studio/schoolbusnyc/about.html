@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <!-- link to p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+    <link rel="icon" type="image/x-icon" href="./assets/wheel_1f6de.png">
+
+  </head>
+
+  <body style="background-color: #ffc021;">
+
+    <header class="header">
+      <div class="main-title">
+        <a href="./index.html"><marquee scrollamount="7" loop="infinite" style="white-space: nowrap; width: 100%;">wheels on the bus &#128652;</marquee></a>
+      </div>
+      <div class="navigation">
+        <a href="./index.html">home &#127979;</a>
+      </div>
+    </header>
+
+    <div class="about">
+      <div>
+        <h1>about this project &#128655;</h1>
+        <p>
+          The <i>wheels on the bus &#128652;</i> is a project that displays the data of school bus delays in New York City. Utilizing the data provided by Department of Education on the NYC Open Data website and p5.js, this website visualizes selected information in a more engaging way, making the experience of looking at this data more &#10024;&#10024;.
+        </p>
+      </div>
+
+      <div>
+        <h1>about this dataset &#128678;</h1>
+        <p>
+          The data used in this project is from NYC Open Data <a href="https://data.cityofnewyork.us/Transportation/Bus-Breakdown-and-Delays/ez4e-fazm">Bus Breakdown and Delays</a>.
+          <br><br>
+          This system collects information from school bus vendors operating out in the field in real time. Bus staff that encounter delays during the route are instructed to radio the dispatcher at the bus vendor’s central office. The bus vendor staff are then instructed to log into the Bus Breakdown and Delay system to record the event and notify OPT. OPT customer service agents use this system to inform parents who call with questions regarding bus service. The Bus Breakdown and Delay system is publicly accessible and contains real time updates. All information in the system is entered by school bus vendor staff.
+          
+        </p>
+      </div>
+
+      <div id="span2col">
+        <h1>how to navigate</h1>
+        <p>
+          &#128652; &#128640; &#128641; &#128647; &#128661; &#128663; &#128665; &#128667; &#128674;
+          <br><br>
+          This project was mainly inspired by the song "The Wheels on the Bus". Using p5.js to visualize the data, circles drawn are spinning clockwise, imitating the wheels on a school bus. 
+          <br><br>
+          The size of the circles are generated according to the reasons for delay/breakdown, so depending on how likely school buses delay/breakdown for a particular reason, the size of each circle changes. If bus is represented by a dot, it indicates that the bus had broken down.
+          <ul>
+            <li>Accident: 5105/576147 = 0.886%</li>
+            <li>Delayed by School: 4084/576147 = 0.709%</li>
+            <li>Flat Tire: 13948/576147 = 2.421%</li>
+            <li>Heavy Traffic: 361075/576147 = 62.671%</li>
+            <li>Late return from Field Trip: 8425/576147 = 1.467%</li>
+            <li>Mechanical Problem: 54080/576147 = 9.386%</li>
+            <li>Other: 86710/576147 = 15.050%</li>
+            <li>Problem Run: 13308/576147 = 1.310%</li>
+            <li>Weather Conditions: 10988/576147 = 1.907%</li>
+            <li>Won’t Start: 18422/576147 = 3.197%</li>
+          </ul>
+          When the user presses the mouse/trackpad, the circles will spin in the opposite direction (counterclockwise). This aims to portray the delay of a school bus as it spins backwards.
+          <br><br>
+          The speed of the spinning circles are determined by how long each bus was delayed (the longer the bus was delayed for, the slower it spins). If the circle does not spin, it indicates that the bus had broken down.
+          <br><br>
+          To view the metatdata of each bus delay/breakdown, click on the button "see metadata &#128064;" to look at the details of each bus delay/breakdown that was logged into the system and updated on the NYC Open Data page. And to hide the metadata and view the data visualization (spinning circles &#128309;), click on the same button "see metadata &#128064;" again.
+          <br><br>
+          The buttons at the bottom right of the screen are to play/pause and mute/unmute the audio that is embedded in this website. Since the data visualization was inspired by the nursery song, it was added to the website to add on/create an audtory experience for the users.
+        </p>
+      </div>
+      
+    </div>
+
+    <footer class="footer">
+      <button onclick="disableMute()" type="button">&#128266;</button>
+      <button onclick="enableMute()" type="button">&#128263;</button>
+
+      <button onclick="toggleAudio()" type="button">&#9199;</button>
+
+      <!-- <button onclick="playAudio()" type="button">&#9199;</button>
+      <button onclick="pauseAudio()" type="button">Pause Video</button><br> -->
+      
+      <audio id="audio" controls autoplay muted>
+        <source src="./assets/thewheelsonthebus_barney.mp3" type="audio/mp3">
+      </audio>
+    </footer>
+
+    <script>
+      var audio = document.getElementById("audio");
+
+      function enableMute() { 
+        audio.muted = true;
+      } 
+      function disableMute() { 
+        audio.muted = false;
+      }
+
+      var audio = document.getElementById("audio"); 
+      var isPlaying = false;
+
+      function toggleAudio(){
+        if (isPlaying){
+          audio.pause();
+        } else{
+          audio.play();
+        }
+        isPlaying = !isPlaying;
+      }
+
+    </script>
+
+  </body>
+</html>

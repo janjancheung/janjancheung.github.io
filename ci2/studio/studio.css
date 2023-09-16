@@ -1,0 +1,130 @@
+@font-face{
+    font-family: "DinamoABCWhyte-Light";
+    src:url("../studio/fonts/DinamoABCWhyte/ABCWhyte-Light-Trial.woff") format("woff");
+    src:url("../studio/fonts/DinamoABCWhyte/ABCWhyte-Light-Trial.woff2") format("woff2");
+    font-weight:light;
+    font-style:normal;
+}
+
+@font-face{
+    font-family: "DinamoABCWhyte-Regular";
+    src:url("../studio/fonts/DinamoABCWhyte/ABCWhyte-Regular-Trial.woff") format("woff");
+    src:url("../studio/fonts/DinamoABCWhyte/ABCWhyte-Regular-Trial.woff2") format("woff2");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family: "DinamoABCWhyte-Bold";
+    src:url("../studio/fonts/DinamoABCWhyte/ABCWhyte-Bold-Trial.woff") format("woff");
+    src:url("../studio/fonts/DinamoABCWhyte/ABCWhyte-Bold-Trial.woff2") format("woff2");
+    font-weight:bold;
+    font-style:normal;
+}
+
+body{
+    background-color: white;
+    font-size: 0.95em;
+    font-family: "DinamoABCWhyte-Regular";
+    margin: 0.95em;
+    color: #000000;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>☝️</text></svg>") 16 0, auto;
+}
+
+h1{
+    font-family: "DinamoABCWhyte-Bold";
+    font-size: 0.95em;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: "DinamoABCWhyte-Bold";
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "DinamoABCWhyte-Bold";
+    font-size: 0.95em;
+    font-weight: normal;
+}
+
+img{
+    max-width: 25vh;
+}
+
+div{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.menu a:link{
+    text-decoration: wavy underline ;
+    color: inherit;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>🪩</text></svg>") 16 0, auto;
+}
+
+.menu a:hover{
+    text-decoration: wavy underline ;
+    color: lime;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>🪩</text></svg>") 16 0, auto;
+}
+
+a:link{
+    text-decoration: underline ;
+    color: inherit;
+}
+
+a:visited{
+    display: inline-block;
+    color: inherit;
+}
+
+a:hover{
+    color:#1b0fd7;
+    text-decoration: dotted underline;
+    /* font-family: "DinamoABCWhyte-Heavy"; */
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>🔗</text></svg>") 16 0, auto;
+}
+  
+a:active{
+    color: #ff3000;
+}
+
+.things{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.box{
+    padding: 0;
+}
+
+.box p{
+    font-family: "DinamoABCWhyte-Light";
+    font-size: 0.75rem;
+}
+
+.box ul{
+    font-family: "DinamoABCWhyte-Light";
+    font-size: 0.75rem;
+}
+
+@media (max-width: 800px){
+    .things{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}

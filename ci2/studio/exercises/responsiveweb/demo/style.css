@@ -1,0 +1,93 @@
+/* CSS files add styling rules to your content */
+
+/* import google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  margin: 0;
+}
+
+.tutorial {
+  padding: 2em;
+  background: black;
+}
+
+.title {
+  font-size: 35px;
+  font-family: "karla";
+  color: white;
+}
+
+.info {
+  font-size: 15px;
+  color: white;
+  font-family: "space mono";
+}
+
+.source {
+    font-family: "karla";
+}
+
+/* media query one*/
+@media only screen and (min-width: 767px) {
+  .tutorial {
+    background: #BEFF6E;
+    color: black;
+  }
+
+  .title {
+    font-family: "karla";
+    font-size: 90px;
+    color: black;
+  }
+
+  .info {
+    font-family: serif;
+    font-size: 35px;
+    color: black;
+  }
+}
+
+/* media query two*/
+@media only screen and (min-width: 1024px) {
+  .tutorial {
+    background: white;
+    font-family: Karla;
+    border: 10px solid red;
+  }
+
+  .title {
+    font-size: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}

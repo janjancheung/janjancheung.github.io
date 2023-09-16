@@ -1,0 +1,326 @@
+/* circular font */
+
+@font-face{
+  font-family: "circular-bold";
+  src:url("./fonts/circular-bold.woff") format("woff");
+  src:url("./fonts/circular-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: "circular-bolditalic";
+  src:url("./fonts/circular-boldItalic.woff") format("woff");
+  src:url("./fonts/circular-boldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face{
+  font-family: "circular-regular";
+  src:url("./fonts/circular-regular.woff") format("woff");
+  src:url("./fonts/circular-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "circular-italic";
+  src:url("./fonts/circular-italic.woff2") format("woff");
+  src:url("./fonts/circular-iItalic.woff") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* tt commons classic font */
+@font-face{
+  font-family: "ttcommonsclassic_bold";
+  src:url("./fonts/ttcommonsclassic_bold.woff") format("woff");
+  src:url("./fonts/ttcommonsclassic_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: "ttcommonsclassic_bolditalic";
+  src:url("./fonts//ttcommonsclassic_bolditalic.woff") format("woff");
+  src:url("./fonts/ttcommonsclassic_bolditalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face{
+  font-family: "ttcommonsclassic_italic";
+  src:url("./fonts/ttcommonsclassic_italic.woff") format("woff");
+  src:url("./fonts/ttcommonsclassic_italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face{
+  font-family: "ttcommonsclassic_regular";
+  src:url("./fonts/ttcommonsclassic_regular.woff") format("woff");
+  src:url("./fonts/ttcommonsclassic_regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+  font-family: "ttcommonsclassic_regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>🔺</text></svg>") 16 0, auto;
+  line-height: 1rem;
+}
+
+canvas{
+  display: block;
+}
+
+/* header */
+
+.header{
+  font-family: "ttcommonsclassic_bold", sans-serif;
+  font-weight: bold;
+  width: 100vw;
+  /* padding-left: 1em;
+  padding-right: 1em; */
+  height: 7.5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  justify-content: space-between;
+  top: 0;
+  position: sticky;
+}
+
+.header a{
+  text-decoration: underline;
+  color: #000000;
+}
+
+.header a:hover{
+  color: #ff4500;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>🔗</text></svg>") 16 0, auto;
+}
+
+.header a:visited{
+  color: relative;
+}
+
+.main-title{
+  text-align: left;
+  font-size: 1.5rem;
+  padding-left: 1em;
+}
+
+.navigation{
+  font-size: 1.5rem;
+  flex-direction: row;
+  text-align: right;
+  right: 0;
+  padding-right: 1em;
+}
+
+h1{
+  font-family: "ttcommonsclassic_italic", sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  color: #0000ff;
+}
+
+marquee{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* link */
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff4500;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>🔗</text></svg>") 16 0, auto;
+}
+
+a:visited{
+  color: inherit;
+}
+
+/* about.html */
+
+.about{
+  display: grid;
+  grid-column: 1;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.about div{
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+#span2col{
+  grid-column: 1 / span 2;
+}
+
+/* audio */
+
+.footer{
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  bottom: 0;
+  position: fixed;
+  margin-right: 2em;
+}
+
+audio{
+  display: none;
+}
+
+button{
+  background-color: none;
+  border: none;
+  border-radius: 2em;
+  font-size: 1.75rem;
+  padding: 0.4em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+button:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' style='fill:black;font-size:30px;'><text y='50%'>👆</text></svg>") 16 0, auto;
+}
+
+/* draw circle p5.js? */
+
+#mycanvas{
+  margin-top: -2em;
+  display: block;
+}
+
+/* toggle */
+
+.seedata-btn{
+  display: block;
+  position: fixed;
+  top: 10vh;
+  right: 4vw;
+  z-index: 999;
+}
+
+/* #busdata{
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: none;;
+  z-index: 1;
+
+} */
+
+.seedata.open .busdata-grid{
+  display: flex;
+  /* position:fixed; */
+}
+
+/* metadata */
+
+.busdata-grid{
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5em;
+  grid-row-gap: 1em;
+  margin-top: 3em;
+  margin-left: 6em;
+  margin-right: 6em;
+  padding: 1.5em;
+  align-content: left;
+  font-size: 0.75rem;
+  /* z-index: 0; */
+  height: 100%;
+}
+
+.busdata-grid div{
+  border: solid 1px black;
+  border-radius: 1em;
+  padding-left: 0.75em;
+  padding-bottom: 1.75em;
+  padding-right: 0.75em;
+}
+
+h2{
+  font-family: "ttcommonsclassic_bold", sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #000000;
+  margin-bottom: -0.75em;
+}
+
+.busdata-grid p{
+  margin-bottom: -1.25em;
+}
+
+::-moz-selection{
+  background: #000000;
+  color: #ffffff;
+}
+
+::selection{
+  background: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+  .busdata-grid{
+    /* grid-template-columns: repeat(2, 1fr); */
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 0.65rem;
+  }
+  h2{
+    font-size: 0.65rem;
+    margin-bottom: -0.95em;
+  }
+  .busdata-grid p{
+    margin-bottom: -1.4em;
+  }
+  .about{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #span2col{
+    grid-column: 1;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .busdata-grid{
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1.75em;
+    grid-row-gap: 2em; */
+    margin-top: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
+    font-size: 0.8rem;
+  }
+  h2{
+    font-size: 0.8rem;
+  }
+  .busdata-grid p{
+    margin-bottom: -1em;
+  }
+  /* .busdata-grid div{
+    padding-left: 1em;
+    padding-bottom: 1.9em;
+    padding-right: 1em;
+  } */
+  /* #mycanvas{
+    margin-top: -3.5em;
+  } */
+  .about{
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: auto;
+  }
+  #span2col{
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schoolbus delays & breakdowns in nyc</title>
+
+    <!-- link to p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+    <link rel="icon" type="image/x-icon" href="./assets/bus_1f68c.png">
+
+  </head>
+
+  <body style="background-color: #ffc021;">
+
+    <header class="header">
+      <div class="main-title">
+        <a href="./index.html"><marquee scrollamount="7" loop="infinite" style="white-space: nowrap; width: 100%;">wheels on the bus &#128652;</marquee></a>
+      </div>
+      <div class="navigation">
+        <a href="./about.html">about &#128211;</a>
+      </div>
+    </header>
+
+    <div class="seedata">
+      <div class="seedata-btn">
+        see metadata &#128064;
+      </div>
+
+      <div id="busdata" class="busdata-grid"></div>
+
+    </div>
+    
+    <footer class="footer">
+      <marquee scrollamount="1" loop="infinite">&#128652;</marquee>
+
+      <button onclick="disableMute()" type="button">&#128266;</button>
+      <button onclick="enableMute()" type="button">&#128263;</button>
+
+      <button onclick="toggleAudio()" type="button">&#9199;</button>
+      
+      <audio id="audio" controls autoplay muted>
+        <source src="./assets/thewheelsonthebus_barney.mp3" type="audio/mp3">
+      </audio>
+      
+    </footer>
+
+    <!-- <script src="./sketch.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
+
+    <script src="./script2.js"></script>
+
+  </body>
+</html>

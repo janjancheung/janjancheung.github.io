@@ -1,0 +1,88 @@
+@font-face{
+    font-family: "ABCMonumentGrotesk-Ultra";
+    src:url("../recreateposter/fonts/ABC-Monument-Grotesk/ABCMonumentGrotesk-Ultra-Trial.woff") format("woff");
+    src:url("../recreateposter/fonts/ABC-Monument-Grotesk/ABCMonumentGrotesk-Ultra-Trial.woff2") format("woff2");
+    font-weight:ultra;
+    font-style:normal;
+}
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    height: max-content;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+h1{
+    /* font-family: "Antique-Legacy-Regular"; */
+    /* font-family: "Antique-Legacy-Light"; */
+    font-weight: 400;
+    font-size: 5em;
+    margin-top: 0em;
+    line-height: 0.8em;
+}
+
+.toshio{
+    text-align: left;
+    margin-bottom: 1.25rem;
+    margin-top: 0.75rem;
+}
+
+.box{
+    position: relative;
+}
+
+.survey{
+    text-align: center;
+    z-index: 1;
+    line-height: 1.5em;
+}
+
+.greenyellow{
+    position: absolute;
+    z-index: 2;
+    background: green;
+    width: 13rem;
+    height: 9.5em;
+    margin: 0 auto;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    background-color: green;
+    background-image: repeating-radial-gradient(#297304, #c9c083);
+}
+
+.greenyellow:hover{
+    z-index:-1 !important;
+}
+
+.date{
+    text-align: left;
+    position: inherit;
+    margin-top: 1rem;
+}
+
+.who{
+    width: 98%;
+    margin: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+#afterimage{
+    text-align: left;
+}
+
+#kaleidoscope{
+    text-align: center;
+    font-family: "ABCMonumentGrotesk-Ultra";
+}
+
+#spazio{
+    text-align: right;
+}

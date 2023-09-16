@@ -1,0 +1,99 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@800&family=Montserrat&display=swap');
+
+body{
+  margin: 0;
+}
+
+.tutorial{
+  padding: 2em;
+  height: 100%;
+}
+
+.title{
+ font-family: 'karla';
+}
+
+.info{
+ font-family: 'space mono';
+}
+
+/* Common Device Sizes via https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  .tutorial{
+    background-color: orangered;
+  }
+  .title{
+    font-family: 'Poppins', sans-serif;
+    color: beige;
+    font-size: 3em;
+    font-weight: 800;
+  }
+  .info{
+    font-family: 'Poppins', sans-serif;
+    color: beige;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+  a:link{
+    text-decoration:overline;
+    color: inherit;
+  }
+  a:hover{
+    color: black;
+  }
+  a:visited{
+    display: inline-block;
+    color: black;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  .tutorial{
+    background-color: blue;
+  }
+  .title{
+    font-family: 'Hepta Slab', serif;
+    color: whitesmoke;
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+  }
+  .info{
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 1.25em;
+    width: 70vw;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-top: -0.75em;
+  }
+  a:link{
+    text-decoration: underline;
+    color: inherit;
+  }
+  a:hover{
+    color: black;
+  }
+  a:visited{
+    display: inline-block;
+    color: black;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
